@@ -56,7 +56,7 @@ header .navigation a:hover{
     color: #3a6cf4;
 }
 
-header .sticky .navigation a:hover{
+header.sticky .navigation a:hover{
     color: black;
 }
 
@@ -70,7 +70,7 @@ section{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(Image/bg.jpg);
+    background-image: url(Image/wha);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ section{
 }
 
 .main .content h2{
-    color: white;
+    color: #4e9eff;
     font-size: 2em;
     font-weight: 500;
 }
@@ -577,126 +577,6 @@ section{
     font-weight: 600;
     text-decoration: none;
   }
-  
-
-
-@media (max-width:1040px) {
-    
-    header{
-        padding: 12px 20px;
-    }
-
-    header.sticky{
-        padding: 10px 20px;
-    }
-
-    header .navigation{
-        display: none;
-    }
-
-    .navigation.active{
-        z-index: 889;
-        position: fixed;
-        background-color: white;
-        top: 0;
-        right: 0;
-        width: 380px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
-        transition: 0.3s ease;
-    }
-
-    header .navigation a{
-        color: black;
-        font-size: 1.2em;
-        margin: 10px;
-        padding: 10px 40px;
-        border-radius: 5px;
-    }
-
-    header .navigation a:hover{
-        background-color: #3a6cf4;
-        color: white;
-        transition: 0.3s ease;
-    }
-
-    .menu-btn{
-        position: absolute;
-        background-image: url(Image/menu.png);
-        background-position: center;
-        background-size: 30px;
-        background-repeat: no-repeat;
-        width: 40px;
-        height: 40px;
-        right: 0;
-        margin: 0 20px;
-        cursor: pointer;
-        transition: 0.3s ease;
-    }
-
-    .menu-btn.active{
-        z-index: 999;
-        background-image: url(Image/close.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 25px;
-        transition: 0.3s ease;
-        filter: invert(1);
-    }
-
-    section{
-        padding: 80px 20px;
-    }
-
-    .main .content h2{
-        font-size: 1em;
-    }
-
-    .animated-text h3{
-        font-size: 2.2em;
-    }
-
-    .section-title{
-        font-size: 1.8em;
-    }
-
-    .about .content{
-        flex-direction: column;
-    }
-
-    .about .content .column{
-        width: 100%;
-        position: relative;
-    }
-
-    .about .content .col-right{
-        margin-top: 40px;
-    }
-
-    /* Skills */
-
-    .skills .content{
-        flex-direction: column;
-    }
-
-    .skills .content .column{
-        position: relative;
-        width: 100%;
-    }
-
-    .skills .content .col-right{
-        margin-top: 40px;
-    }
- 
-    .contact-form{
-        padding: 35px 40px;
-      }
-}
-
 
 .scrollToTop-btn{
     z-index: 999;
@@ -715,9 +595,13 @@ section{
     pointer-events: none;
     opacity: 0;
     transition: all 0.3s ease;
-  }
+}
 
-
-
-
-
+/* 
+╔═══════════════════════════════════════════════════════════╗
+║  🔒 DISEÑO FIJO - NO SE MUEVE EN NINGÚN DISPOSITIVO 🔒   ║
+║  ✅ Móvil    ✅ Tablet    ✅ Laptop                        ║
+║  ✅ PC       ✅ Proyector  ✅ TV                           ║
+║  Sin media queries = Sin cambios = Sin sorpresas          ║
+╚═══════════════════════════════════════════════════════════╝
+*/
