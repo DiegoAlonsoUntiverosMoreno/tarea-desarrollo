@@ -70,19 +70,43 @@ section{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(Image/wha);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 100px 200px;
 }
 
 .main .content{
-    max-width: 800px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+
+/* Contenedor de la imagen (IZQUIERDA) */
+.main .content .image-section {
+    flex: 0 0 700px;
+    width: 700px;
+}
+
+.main .content .image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Contenedor del texto (DERECHA) */
+.main .content .text-section {
+    flex: 1;
+    max-width: 600px;
 }
 
 .main .content h2{
-    color: #4e9eff;
+    color: #ffffff;
     font-size: 2em;
     font-weight: 500;
 }
@@ -90,6 +114,7 @@ section{
 .main .content h2 span{
     font-size: 2.8rem;
     font-weight: 600;
+    color: #ffffff;
 }
 
 .animated-text{
@@ -99,7 +124,7 @@ section{
 }
 
 .animated-text h3{
-    color: #4e9eff;
+    color: #ffffff;
     font-size: 3em;
     font-weight: 700;
     line-height: 70px;
